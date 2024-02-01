@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import './form.css'
 import img from '../../assets/screen.svg'
 import Seates from './Seates'
