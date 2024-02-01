@@ -8,7 +8,7 @@ const Seates = ({seats,setSeats,prize,setPrize}) => {
         })
         setPrize(count*100);
     }
-    useEffect(countClickedSeats,[seats,price]);
+    useEffect(countClickedSeats,[seats,prize]);
   return (
     <div className="seats">
            {
