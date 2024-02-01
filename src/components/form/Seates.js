@@ -8,7 +8,7 @@ const Seates = ({seats,setSeats,prize,setPrize}) => {
         })
         setPrize(count*100);
     }
-    useEffect(countClickedSeats,[seats]);
+    useEffect(countClickedSeats,[seats,price]);
   return (
     <div className="seats">
            {
@@ -16,7 +16,7 @@ const Seates = ({seats,setSeats,prize,setPrize}) => {
                 return <div key={seat.id} className={seat.booked ? "seat seatbooked":"seat"}
                             onClick={()=>{
                                 setSeats(seats.map((i)=>{
-                                    if(i.id==seat.id && !i.booked){
+                                    if(i.id===seat.id && !i.booked){
                                         return {...i,clicked:!i.clicked}
                                     }else{
                                         return i
