@@ -1,0 +1,18 @@
+.seats{
+    position:absolute;
+    bottom:200px;
+    left:50%;
+    transform:translateX(-50%);
+    display:grid;
+    grid-template-columns:repeat(10,25px);
+    grid-template-rows:repeat(5,25px);
+    gap:10px;
+}
+.seat{
+    border:1.5px solid black;
+    border-radius:5px;
+}
+.seatbooked{
+    background:rgba(0,0,0,.7);
+    cursor:not-allowed;
+}
