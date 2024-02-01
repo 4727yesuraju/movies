@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import "./content.css"
-const Content = ({content,setContent,showForm,setShowForm}) => {
+const Content = ({content,showForm,setShowForm}) => {
     
   return content.show && <div className="content" >
      

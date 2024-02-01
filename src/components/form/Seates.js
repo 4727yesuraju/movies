@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import './seats.css'
 const Seates = ({seats,setSeats,prize,setPrize}) => {
     function countClickedSeats(){

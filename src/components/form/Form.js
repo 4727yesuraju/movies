@@ -73,9 +73,9 @@ const Form = ({showForm,setShowForm,content}) => {
             <div className="prize">
                   <div>
                     <h3>{prize}</h3>
-                    <span>{prize/100==1?"ticket":"tickets"} {prize/100}*{100}</span>
+                    <span>{prize/100===1?"ticket":"tickets"} {prize/100}*{100}</span>
                   </div>
-                  <button className="booknow">Book {prize/100} {prize/100==1?"ticket":"tickets"}</button>
+                  <button className="booknow">Book {prize/100} {prize/100===1?"ticket":"tickets"}</button>
               </div>
         </div>
       
